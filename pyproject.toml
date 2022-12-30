@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "reviewapi"
+version = "0.1.0"
+description = ""
+authors = ["raiden <mail@raiden076.xyz>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pytest-playwright = "^0.3.0"
+fastapi = "^0.88.0"
+uvicorn = "^0.20.0"
+openai = "^0.25.0"
+tenacity = "^8.1.0"
+simplesqlite = "^1.3.0"
+pymongo = "^4.3.3"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^22.12.0"
+ipython = "^8.7.0"
+ipykernel = "^6.19.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
